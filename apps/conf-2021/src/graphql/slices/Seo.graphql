@@ -1,0 +1,10 @@
+fragment Seo on SeoSlice {
+  id
+  title
+  images {
+    id
+    height
+    width
+    url
+  }
+}

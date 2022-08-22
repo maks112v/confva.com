@@ -1,0 +1,15 @@
+fragment Speakers on SpeakersSlice {
+  id
+  subtitle
+  title
+  speakers {
+    id
+    image {
+      url(transformation: { image: { resize: { width: 500, height: 500 } } })
+      width
+      height
+    }
+    name
+    location
+  }
+}

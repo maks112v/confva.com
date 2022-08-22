@@ -1,0 +1,4 @@
+fragment Question on QuestionSlice {
+  id
+  title
+}

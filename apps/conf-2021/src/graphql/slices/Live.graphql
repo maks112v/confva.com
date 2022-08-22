@@ -1,0 +1,5 @@
+fragment Live on LiveSlice {
+  id
+  title
+  embed
+}

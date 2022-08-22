@@ -1,0 +1,6 @@
+fragment Theme on ThemeSlice {
+  id
+  embed
+  title
+  subtitle
+}

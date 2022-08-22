@@ -1,0 +1,13 @@
+fragment Navbar on NavbarMatter {
+  id
+  logo {
+    url
+  }
+  items {
+    ... on Page {
+      id
+      slug
+      title
+    }
+  }
+}
