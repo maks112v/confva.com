@@ -1,0 +1,35 @@
+{
+  "name": "conf-2022",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.6.5",
+    "@splitbee/web": "^0.3.0",
+    "autoprefixer": "^10.4.7",
+    "clsx": "^1.2.0",
+    "focus-visible": "^5.2.0",
+    "next": "12.2.3",
+    "postcss-focus-visible": "^6.0.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "tailwindcss": "^3.1.4",
+    "ui": "workspace:*"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@types/node": "^17.0.12",
+    "@types/react": "17.0.48",
+    "config": "workspace:*",
+    "eslint": "7.32.0",
+    "eslint-config-custom": "workspace:*",
+    "next-transpile-modules": "9.0.0",
+    "tsconfig": "workspace:*",
+    "typescript": "^4.5.3"
+  }
+}
