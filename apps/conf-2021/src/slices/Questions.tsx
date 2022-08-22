@@ -1,9 +1,7 @@
-import { FunctionComponent } from 'react';
+import { FunctionComponent } from "react";
 
 interface QuestionsSliceProps {}
 
-export const QuestionsSlice: FunctionComponent<QuestionsSliceProps> = ({
-  children,
-}) => {
+export const QuestionsSlice: FunctionComponent<QuestionsSliceProps> = () => {
   return null;
 };
