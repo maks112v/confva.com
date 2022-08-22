@@ -99,6 +99,7 @@ importers:
       eslint-config-custom: workspace:*
       focus-visible: ^5.2.0
       next: 12.2.3
+      next-seo: ^5.5.0
       next-transpile-modules: 9.0.0
       postcss-focus-visible: ^6.0.4
       react: 18.2.0
@@ -114,6 +115,7 @@ importers:
       clsx: 1.2.1
       focus-visible: 5.2.0
       next: 12.2.3_twoewwu6sg7cdf3ao6njtbftne
+      next-seo: 5.5.0_53oqlnqnxhbetdy4ljlkkvmoby
       postcss-focus-visible: 6.0.4_postcss@8.4.16
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -4468,6 +4470,18 @@ packages:
       react-dom: '>=16.0.0'
     dependencies:
       next: 12.2.5_twoewwu6sg7cdf3ao6njtbftne
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /next-seo/5.5.0_53oqlnqnxhbetdy4ljlkkvmoby:
+    resolution: {integrity: sha512-5ouBHFtx8YrSDW44lj0qIEQ+oMcz6stgoITB+SqHUZbhgizoJsyLmq73gJ0lxtEKpcN8vG2QgRIJfdb8OAPChw==}
+    peerDependencies:
+      next: ^8.1.1-canary.54 || >=9.0.0
+      react: '>=16.0.0'
+      react-dom: '>=16.0.0'
+    dependencies:
+      next: 12.2.3_twoewwu6sg7cdf3ao6njtbftne
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     dev: false
