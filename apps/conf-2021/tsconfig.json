@@ -15,7 +15,7 @@
       "@libs/*": ["src/libs/*"],
       "@panel/*": ["src/panel/*"],
       "@public/*": ["public/*"],
-      "@services/*": ["src/services/*"],
+      "@services/*": ["src/data/*"],
       "@slices/*": ["src/slices/*"],
       "@utils/*": ["src/utils/*"],
       "@views/*": ["src/views/*"],

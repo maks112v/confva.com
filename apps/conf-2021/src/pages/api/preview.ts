@@ -1,7 +1,7 @@
-import { PageDocument, PageQuery, PageQueryVariables } from '#graphql';
-import { createHttpLink } from '@apollo/client';
-import { graphClient } from '@services/graphcms';
-import { NextApiRequest, NextApiResponse } from 'next';
+import { PageDocument, PageQuery, PageQueryVariables } from "#graphql";
+import { createHttpLink } from "@apollo/client";
+import { graphClient } from "@data/graphcms";
+import { NextApiRequest, NextApiResponse } from "next";
 
 export default async function handler(
   req: NextApiRequest,
@@ -16,7 +16,7 @@ export default async function handler(
 
   graphClient.setLink(link);
 
-  if (req?.query?.type === 'page') {
+  if (req?.query?.type === "page") {
     const pageRes = await graphClient.query<PageQuery, PageQueryVariables>({
       query: PageDocument,
       variables: {
@@ -25,7 +25,7 @@ export default async function handler(
     });
 
     if (!pageRes.data.page) {
-      return res.status(404).json({ message: 'Page Not Found' });
+      return res.status(404).json({ message: "Page Not Found" });
     }
 
     res.setPreviewData({
@@ -34,11 +34,11 @@ export default async function handler(
 
     res.writeHead(307, {
       Location: `/${pageRes?.data?.page?.slug
-        ?.split('/')
+        ?.split("/")
         ?.filter((item) => !!item)}`,
     });
     res.end();
   } else {
-    throw new Error('Invalid Type');
+    throw new Error("Invalid Type");
   }
 }
