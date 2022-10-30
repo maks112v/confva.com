@@ -10,7 +10,7 @@ This turborepo uses [pnpm](https://pnpm.io) as a packages manager. It includes t
 
 - `landing`: a landing page combining all years
 - `conf-2021`: Conference site for 2021
-- `conf-2022`: Conference site for 2021
+- `conf-2022`: Conference site for 2022
 - `ui`: a stub React component library shared by all apps
 - `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
