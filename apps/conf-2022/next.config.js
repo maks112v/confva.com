@@ -1,5 +1,11 @@
-const withTM = require("next-transpile-modules")(["ui", "config"]);
-
-module.exports = withTM({
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   reactStrictMode: true,
-});
+  swcMinify: true,
+  experimental: {
+    newNextLinkBehavior: true,
+    scrollRestoration: true,
+  },
+}
+
+module.exports = nextConfig
