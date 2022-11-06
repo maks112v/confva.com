@@ -1,5 +1,6 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+const withTM = require('next-transpile-modules')(['config'])
+
+module.exports = withTM({
   reactStrictMode: true,
   swcMinify: true,
   experimental: {
@@ -7,6 +8,4 @@ const nextConfig = {
     scrollRestoration: true,
     allowFutureImage: true,
   },
-}
-
-module.exports = nextConfig
+})
