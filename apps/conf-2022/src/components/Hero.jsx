@@ -7,7 +7,7 @@ import backgroundImage from '@/images/background.jpg'
 export function Hero() {
   return (
     <div className="relative pt-10 pb-20 sm:py-24">
-      <div className="absolute inset-x-0 -top-48 -bottom-14 overflow-hidden bg-indigo-50">
+      <div className="absolute inset-x-0 overflow-hidden -top-48 -bottom-14 bg-indigo-50">
         <Image
           className="absolute top-0 left-0 translate-y-[-10%] translate-x-[-55%] -scale-x-100 sm:left-1/2 sm:translate-y-[-6%] sm:translate-x-[-98%] lg:translate-x-[-106%] xl:translate-x-[-122%]"
           src={backgroundImage}
@@ -21,33 +21,35 @@ export function Hero() {
         <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-white" />
       </div>
       <Container className="relative">
-        <div className="mx-auto max-w-2xl lg:max-w-4xl lg:px-12">
-          <h1 className="font-display text-5xl font-bold tracking-tighter text-blue-600 sm:text-7xl">
-            <span className="sr-only">DeceptiConf - </span>A design conference
-            for the dark side.
+        <div className="max-w-2xl mx-auto lg:max-w-4xl lg:px-12">
+          <h1 className="text-5xl font-bold tracking-tighter text-blue-600 font-display sm:text-7xl">
+            Dear Time..
           </h1>
-          <div className="mt-6 space-y-6 font-display text-2xl tracking-tight text-blue-900">
+          <div className="mt-6 space-y-6 text-2xl tracking-tight text-blue-900 font-display">
             <p>
-              The next generation of web users are tech-savvy and suspicious.
-              They know how to use dev tools, they can detect a phishing scam
-              from a mile away, and they certainly aren’t accepting any checks
-              from Western Union.
+              The world I live in does not value you. It wastes you on futile,
+              intrinsic things, seemingly trying to quicken your passage. As
+              Christians, we need to be better stewards - you are a precious,
+              finite gift that God gave us temporarily.
             </p>
             <p>
-              At DeceptiConf you’ll learn about the latest dark patterns being
-              developed to trick even the smartest visitors, and you’ll learn
-              how to deploy them without ever being detected.
+              Join us this November. We will open Ephesians 5:15 and glean how
+              to walk judiciously and redeem the fleeting time we have left.
             </p>
           </div>
-          <Button href="#" className="mt-10 w-full sm:hidden">
-            Get your tickets
+          <Button
+            target="_blank"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSf7ug3QLXJ6G2gOqv6Udhi6W_o159yFdRcQNOh_fOaFpQNxvw/viewform"
+            className="w-full mt-10 sm:hidden"
+          >
+            Sign Up
           </Button>
-          <dl className="mt-10 grid grid-cols-2 gap-y-6 gap-x-10 sm:mt-16 sm:gap-y-10 sm:gap-x-16 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
+          <dl className="grid grid-cols-2 mt-10 gap-y-6 gap-x-10 sm:mt-16 sm:gap-y-10 sm:gap-x-16 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
             {[
-              ['Speakers', '18'],
-              ['People Attending', '2,091'],
-              ['Venue', 'Staples Center'],
-              ['Location', 'Los Angeles'],
+              ['Speakers', '5'],
+              ['People Attending', '1,100'],
+              ['Church', 'FRBC'],
+              ['Location', 'Virginia'],
             ].map(([name, value]) => (
               <div key={name}>
                 <dt className="font-mono text-sm text-blue-600">{name}</dt>
