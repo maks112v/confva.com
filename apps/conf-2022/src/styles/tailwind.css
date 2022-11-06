@@ -1,3 +1,11 @@
 @tailwind base;
+@layer base {
+  .text-brand-yellow {
+    @apply text-[#FFB32C]
+  }
+  .text-brand-yellow-dark {
+    @apply text-[#FB981F]
+  }
+}
 @tailwind components;
 @tailwind utilities;

@@ -6,117 +6,79 @@ import { useEffect, useId, useState } from 'react'
 import { Container } from '@/components/Container'
 import { DiamondIcon } from '@/components/DiamondIcon'
 
+import antonArtemyevImage from '@/images/avatars/anton-artemyev.jpg'
 import olegArtemyevImage from '@/images/avatars/oleg-artemyev.jpg'
+import peterTkachukJrImage from '@/images/avatars/peter-tkachuk-jr.jpg'
+import vladimirMinyakovImage from '@/images/avatars/vladimir-minyakov.jpg'
 
 const days = [
   {
     name: 'Opening Day',
-    date: 'April 4',
-    dateTime: '2022-04-04',
+    date: 'November 24',
+    dateTime: '2022-11-24',
     speakers: [
       {
-        name: 'Oleg Artemyev',
-        role: 'Pastor',
+        name: 'Владимир Миняков',
+        description: 'Kansas City, KA',
+        image: vladimirMinyakovImage,
+      },
+      {
+        name: 'Олег Артемьев',
+        description: 'Harrisonburg, VA',
         image: olegArtemyevImage,
-      },
-      {
-        name: 'Jaquelin Isch',
-        role: 'UX Design at InGen',
-        // image: jaquelinIschImage,
-      },
-      {
-        name: 'Dianne Guilianelli',
-        role: 'General Manager at Initech',
-        // image: dianneGuilianelliImage,
-      },
-      {
-        name: 'Ronni Cantadore',
-        role: 'Design Engineer at Weyland-Yutani',
-        // image: ronniCantadoreImage,
-      },
-      {
-        name: 'Erhart Cockrin',
-        role: 'Product Lead at Cyberdyne Systems',
-        // image: erhartCockrinImage,
-      },
-      {
-        name: 'Parker Johnson',
-        role: 'UI Designer at MomCorp',
-        // image: parkerJohnsonImage,
       },
     ],
   },
   {
-    name: 'Speakers & Workshops',
-    date: 'April 5',
-    dateTime: '2022-04-05',
+    name: 'Speakers & Seminars',
+    date: 'November 25',
+    dateTime: '2022-11-25',
     speakers: [
       {
-        name: 'Damaris Kimura',
-        role: 'Senior Engineer at OCP',
-        // image: damarisKimuraImage,
+        name: 'Антон Артемьев',
+        description: 'Harrisonburg, VA',
+        image: antonArtemyevImage,
       },
       {
-        name: 'Ibrahim Frasch',
-        role: 'Programmer at Umbrella Corp',
-        // image: ibrahimFraschImage,
+        name: 'Владимир Миняков',
+        description: 'Kansas City, KA',
+        image: vladimirMinyakovImage,
       },
       {
-        name: 'Cathlene Burrage',
-        role: 'Frontend Developer at Buy n Large',
+        name: 'Юрий Сычев',
+        description: 'Harrisonburg, VA',
         // image: cathleneBurrageImage,
       },
       {
-        name: 'Rinaldo Beynon',
-        role: 'Data Scientist at Rekall',
-        // image: rinaldoBeynonImage,
+        name: 'Ткачук Петр jr.',
+        description: 'San Francisco, CA',
+        image: peterTkachukJrImage,
       },
       {
-        name: 'Waylon Hyden',
-        role: 'DevOps at RDA Corporation',
-        // image: waylonHydenImage,
+        name: 'Олег Артемьев',
+        description: 'Harrisonburg, VA',
+        image: olegArtemyevImage,
       },
       {
-        name: 'Giordano Sagucio',
-        role: 'Game Developer at Soylent Corp',
-        // image: giordanoSagucioImage,
+        name: 'Мол Рук',
+        description: 'с Запада',
       },
     ],
   },
   {
-    name: 'Interviews',
-    date: 'April 6',
-    dateTime: '2022-04-06',
+    name: 'Final Day',
+    date: 'November 26',
+    dateTime: '2022-11-06',
     speakers: [
       {
-        name: 'Andrew Greene',
-        role: 'Frontend Developer at Ultratech',
-        // image: andrewGreeneImage,
+        name: 'Петр Ткачук jr',
+        description: 'San Francisco, CA',
+        image: peterTkachukJrImage,
       },
       {
-        name: 'Heather Terry',
-        role: 'Backend Developer at Xanatos Enterprises',
-        // image: heatherTerryImage,
-      },
-      {
-        name: 'Piers Wilkins',
-        role: 'Full stack Developer at BiffCo',
-        // image: piersWilkinsImage,
-      },
-      {
-        name: 'Gordon Sanderson',
-        role: 'Mobile Developer at Cobra Industries',
-        // image: gordonSandersonImage,
-      },
-      {
-        name: 'Kimberly Parsons',
-        role: 'Game Developer at Tyrell Corporation',
-        // image: kimberlyParsonsImage,
-      },
-      {
-        name: 'Richard Astley',
-        role: 'CEO at Roll Out',
-        // image: richardAstley,
+        name: 'Владимир Миняков',
+        description: 'Kansas City, KA',
+        image: vladimirMinyakovImage,
       },
     ],
   },
@@ -249,7 +211,7 @@ export function Speakers() {
                         style={{ clipPath: `url(#${id}-${speakerIndex % 3})` }}
                       >
                         <Image
-                          className="absolute inset-0 object-cover w-full h-full transition duration-300 group-hover:scale-110"
+                          className="absolute inset-0 object-cover object-top w-full h-full transition duration-300 group-hover:scale-110"
                           src={speaker.image}
                           alt=""
                           priority
@@ -261,7 +223,7 @@ export function Speakers() {
                       {speaker.name}
                     </h3>
                     <p className="mt-1 text-base tracking-tight text-slate-500">
-                      {speaker.role}
+                      {speaker.description}
                     </p>
                   </div>
                 ))}
