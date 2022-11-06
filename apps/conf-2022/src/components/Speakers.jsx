@@ -9,6 +9,7 @@ import { DiamondIcon } from '@/components/DiamondIcon'
 import antonArtemyevImage from '@/images/avatars/anton-artemyev.jpg'
 import olegArtemyevImage from '@/images/avatars/oleg-artemyev.jpg'
 import peterTkachukJrImage from '@/images/avatars/peter-tkachuk-jr.jpg'
+import uriSychevImage from '@/images/avatars/uri-sychev.jpg'
 import vladimirMinyakovImage from '@/images/avatars/vladimir-minyakov.jpg'
 
 const days = [
@@ -47,7 +48,7 @@ const days = [
       {
         name: 'Юрий Сычев',
         description: 'Harrisonburg, VA',
-        // image: cathleneBurrageImage,
+        image: uriSychevImage,
       },
       {
         name: 'Ткачук Петр jr.',
