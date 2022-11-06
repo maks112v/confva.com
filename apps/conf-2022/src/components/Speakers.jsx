@@ -59,10 +59,6 @@ const days = [
         description: 'Harrisonburg, VA',
         image: olegArtemyevImage,
       },
-      {
-        name: 'Мол Рук',
-        description: 'с Запада',
-      },
     ],
   },
   {
