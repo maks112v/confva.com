@@ -1,5 +1,5 @@
 {
-  "name": "tailwindui-keynote",
+  "name": "conf-2022",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -15,6 +15,7 @@
     "clsx": "^1.2.1",
     "focus-visible": "^5.2.0",
     "next": "^12.3.1",
+    "next-transpile-modules": "9.0.0",
     "postcss-focus-visible": "^6.0.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -25,6 +26,9 @@
     "eslint": "8.19.0",
     "eslint-config-next": "12.2.5",
     "prettier": "^2.7.1",
-    "prettier-plugin-tailwindcss": "^0.1.13"
+    "prettier-plugin-tailwindcss": "^0.1.13",
+    "eslint-config-custom": "workspace:*",
+    "tsconfig": "workspace:*",
+    "config": "workspace:*"
   }
 }
