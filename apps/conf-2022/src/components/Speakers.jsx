@@ -133,10 +133,10 @@ export function Speakers() {
           >
             Speakers
           </h2>
-          <p className="mt-4 text-2xl tracking-tight text-blue-900 font-display">
+          {/* <p className="mt-4 text-2xl tracking-tight text-blue-900 font-display">
             Learn from the experts on the cutting-edge of deception at the most
             sinister companies.
-          </p>
+          </p> */}
         </div>
         <Tab.Group
           as="div"
