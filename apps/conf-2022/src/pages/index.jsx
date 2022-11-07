@@ -10,10 +10,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>DeceptiConf - A community-driven design conference</title>
+        <title>Times Up - Conference 2022 - Harrisonburg, VA</title>
         <meta
           name="description"
-          content="At DeceptiConf you’ll learn about the latst dark patterns being developed to trick even the smartest visitors, and you’ll learn how to deploy them without ever being detected."
+          content="Dear Time... The world I live in does not value you. It wastes you on futile, intrinsic things, seemingly trying to quicken your passage. As Christians, we need to be better stewards - you are a precious, finite gift that God gave us temporarily."
         />
       </Head>
       <Header />
