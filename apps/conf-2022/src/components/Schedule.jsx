@@ -1,6 +1,6 @@
 import { Tab } from "@headlessui/react";
 import clsx from "clsx";
-import Image from "next/future/image";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 import { Container } from "@/components/Container";
@@ -272,7 +272,7 @@ export function Schedule() {
           <Image
             className="absolute left-full top-0 -translate-x-1/2 sm:left-1/2 sm:translate-y-[-15%] sm:translate-x-[-20%] md:translate-x-0 lg:translate-x-[5%] lg:translate-y-[4%] xl:translate-y-[-8%] xl:translate-x-[27%]"
             src={backgroundImage}
-            alt=""
+            alt="background image"
             width={918}
             height={1495}
             unoptimized

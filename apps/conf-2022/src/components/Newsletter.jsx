@@ -1,8 +1,8 @@
-import Image from 'next/future/image'
+import Image from "next/image";
 
-import { Button } from '@/components/Button'
-import { Container } from '@/components/Container'
-// import backgroundImage from '@/images/background-newsletter.jpg'
+import { Button } from "@/components/Button";
+import { Container } from "@/components/Container";
+import backgroundImage from "@/images/background.jpg";
 
 function ArrowRightIcon(props) {
   return (
@@ -16,14 +16,14 @@ function ArrowRightIcon(props) {
         strokeLinejoin="round"
       />
     </svg>
-  )
+  );
 }
 
 export function Newsletter() {
   return (
     <section id="newsletter" aria-label="Newsletter">
       <Container>
-        <div className="relative px-4 py-20 -mx-4 overflow-hidden bg-indigo-50 sm:-mx-6 sm:px-6 md:mx-0 md:rounded-5xl md:px-16 xl:px-24 xl:py-36">
+        <div className="relative px-4 py-20 -mx-4 overflow-hidden md:rounded-5xl bg-indigo-50 sm:-mx-6 sm:px-6 md:mx-0 md:px-16 xl:px-24 xl:py-36">
           <Image
             className="absolute left-1/2 top-0 translate-x-[-10%] translate-y-[-45%] lg:translate-x-[-32%]"
             src={backgroundImage}
@@ -66,5 +66,5 @@ export function Newsletter() {
         </div>
       </Container>
     </section>
-  )
+  );
 }
