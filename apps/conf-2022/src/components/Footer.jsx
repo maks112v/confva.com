@@ -12,6 +12,7 @@ export function Footer() {
             <a
               href={"https://goo.gl/maps/b5iVTFNtiJ9xRcbY6"}
               target="_blank"
+              rel="noreferrer"
               className="text-base "
             >
               784 Dinkel Ave, Mt Crawford, VA 22841
