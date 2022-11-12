@@ -1,139 +1,145 @@
-import { Tab } from '@headlessui/react'
-import clsx from 'clsx'
-import Image from 'next/future/image'
-import { useEffect, useState } from 'react'
+import { Tab } from "@headlessui/react";
+import clsx from "clsx";
+import Image from "next/image";
+import { useEffect, useState } from "react";
 
-import { Container } from '@/components/Container'
-import backgroundImage from '@/images/background.jpg'
+import { Container } from "@/components/Container";
+import backgroundImage from "@/images/background.jpg";
 
 const schedule = [
   {
-    date: 'November 24',
-    dateTime: '2022-11-24',
+    date: "November 24",
+    dateTime: "2022-11-24",
     summary:
-      'We will gather to eat in the second building and then move to the main building for the conference.',
+      "We will gather to eat in the second building and then move to the main building for the conference.",
     timeSlots: [
       {
-        name: 'Dinner',
+        name: "Registration",
         description:
-          'Join us for dinner before the service. Grab a plate, socialize, and make sure you have a place to stay at.',
-        start: '5:00PM',
+          "Come early to get your name tag and get to know other attendees.",
+        start: "6:00PM",
       },
       {
-        name: 'Church Service',
-        description: 'Join us for the opening service of the conference.',
-        start: '6:00PM',
+        name: "Church Service",
+        description: "Join us for the opening service of the conference.",
+        start: "7:00PM",
+      },
+      {
+        name: "Dinner",
+        description:
+          "Join us for dinner after the service. Grab a plate, socialize, and make sure you have a place to stay at.",
+        start: null,
       },
     ],
   },
   {
-    date: 'November 25',
-    dateTime: '2022-11-25',
+    date: "November 25",
+    dateTime: "2022-11-25",
     summary:
-      'Morning service, seminars, questions and asnwers, and an evening bonfire.',
+      "Morning service, seminars, questions and asnwers, and an evening bonfire.",
     timeSlots: [
       {
-        name: 'Morning Service',
+        name: "Morning Service",
         description:
-          'Bring your Bible! We will start the morning praising Jesus and listening to great sermons.',
-        start: '10:00AM',
-        end: '12:30PM',
+          "Bring your Bible! We will start the morning praising Jesus and listening to great sermons.",
+        start: "10:00AM",
+        end: "12:30PM",
       },
       {
-        name: 'Lunch',
+        name: "Lunch",
         description: null,
-        start: '12:30PM',
+        start: "12:30PM",
       },
       {
-        name: 'Seminar',
+        name: "Seminar",
         description:
-          'Юрий Сычев - Практическое христианство и библейская этика',
-        start: '2:00PM',
-        end: '3:00PM',
+          "Юрий Сычев - Практическое христианство и библейская этика",
+        start: "2:00PM",
+        end: "3:00PM",
       },
       {
-        name: 'Seminar',
-        description: 'Ткачук Петр jr',
-        start: '3:00PM',
-        end: '4:00PM',
+        name: "Seminar",
+        description: "Ткачук Петр jr",
+        start: "3:00PM",
+        end: "4:00PM",
       },
       {
-        name: 'Coffee Break',
+        name: "Coffee Break",
         description: null,
-        start: '4:00PM',
-        end: '5:00PM',
+        start: "4:00PM",
+        end: "5:00PM",
       },
       {
-        name: 'Q&A',
-        description: 'Questions and Answers with Олег Артемьев',
-        start: '5:00PM',
-        end: '7:00PM',
+        name: "Q&A",
+        description: "Questions and Answers with Олег Артемьев",
+        start: "5:00PM",
+        end: "7:00PM",
       },
       {
-        name: 'Dinner',
+        name: "Dinner",
         description: null,
-        start: '7:00PM',
-        end: '8:00PM',
+        start: "7:00PM",
+        end: "8:00PM",
       },
       {
-        name: 'Bonfire',
-        description: 'Join us for a bonfire and a time of fellowship.',
-        start: '8:00PM',
-        end: '11:00PM',
+        name: "Bonfire",
+        description: "Join us for a bonfire and a time of fellowship.",
+        start: "8:00PM",
+        end: "11:00PM",
       },
     ],
   },
   {
-    date: 'November 26',
-    dateTime: '2022-11-06',
+    date: "November 26",
+    dateTime: "2022-11-06",
     summary:
-      'Church service, lunch, and for those who want to stay longer, coffee and fellowship.',
+      "Church service, lunch, and for those who want to stay longer, coffee and fellowship.",
     timeSlots: [
       {
-        name: 'Morning Service',
+        name: "Morning Service",
         description:
-          'Our final service with great sermons and a moment to reflect on the conference.',
-        start: '10:00AM',
-        end: '1:00PM',
+          "Our final service with great sermons and a moment to reflect on the conference.",
+        start: "10:00AM",
+        end: "1:00PM",
       },
       {
-        name: 'Lunch',
+        name: "Lunch",
         description: null,
-        start: '1:00PM',
-        end: '2:00PM',
+        start: "1:00PM",
+        end: "2:00PM",
       },
       {
-        name: 'Coffee Night',
-        description: 'Join us for coffee and fellowship.',
-        start: '5:00PM',
+        name: "Coffee Night",
+        description: "Join us for coffee and fellowship.",
+        start: "5:00PM",
       },
     ],
   },
-]
+];
 
 function ScheduleTabbed() {
-  let [tabOrientation, setTabOrientation] = useState('horizontal')
+  let [tabOrientation, setTabOrientation] = useState("horizontal");
 
   useEffect(() => {
-    let smMediaQuery = window.matchMedia('(min-width: 640px)')
+    let smMediaQuery = window.matchMedia("(min-width: 640px)");
 
     function onMediaQueryChange({ matches }) {
-      setTabOrientation(matches ? 'vertical' : 'horizontal')
+      setTabOrientation(matches ? "vertical" : "horizontal");
     }
 
-    onMediaQueryChange(smMediaQuery)
-    smMediaQuery.addEventListener('change', onMediaQueryChange)
+    onMediaQueryChange(smMediaQuery);
+    smMediaQuery.addEventListener("change", onMediaQueryChange);
 
     return () => {
-      smMediaQuery.removeEventListener('change', onMediaQueryChange)
-    }
-  }, [])
+      smMediaQuery.removeEventListener("change", onMediaQueryChange);
+    };
+  }, []);
 
   return (
     <Tab.Group
       as="div"
       className="grid max-w-2xl grid-cols-1 mx-auto gap-y-6 sm:grid-cols-2 lg:hidden"
-      vertical={tabOrientation === 'vertical'}
+      vertical={tabOrientation === "vertical"}
     >
       <Tab.List className="flex pb-4 pl-4 -mx-4 overflow-x-auto gap-x-4 gap-y-10 sm:mx-0 sm:flex-col sm:pb-0 sm:pl-0 sm:pr-8">
         {({ selectedIndex }) =>
@@ -141,8 +147,8 @@ function ScheduleTabbed() {
             <div
               key={day.dateTime}
               className={clsx(
-                'relative w-3/4 flex-none pr-4 sm:w-auto sm:pr-0',
-                dayIndex !== selectedIndex && 'opacity-70'
+                "relative w-3/4 flex-none pr-4 sm:w-auto sm:pr-0",
+                dayIndex !== selectedIndex && "opacity-70"
               )}
             >
               <DaySummary
@@ -171,7 +177,7 @@ function ScheduleTabbed() {
         ))}
       </Tab.Panels>
     </Tab.Group>
-  )
+  );
 }
 
 function DaySummary({ day }) {
@@ -184,7 +190,7 @@ function DaySummary({ day }) {
         {day.summary}
       </p>
     </>
-  )
+  );
 }
 
 function TimeSlots({ day, className }) {
@@ -193,7 +199,7 @@ function TimeSlots({ day, className }) {
       role="list"
       className={clsx(
         className,
-        'space-y-8 bg-white/60 py-14 px-10 text-center shadow-xl shadow-blue-900/5 backdrop-blur'
+        "space-y-8 bg-white/60 py-14 px-10 text-center shadow-xl shadow-blue-900/5 backdrop-blur"
       )}
     >
       {day.timeSlots.map((timeSlot, timeSlotIndex) => (
@@ -218,11 +224,11 @@ function TimeSlots({ day, className }) {
             </time>
             {timeSlot.end && (
               <>
-                {' '}
-                -{' '}
+                {" "}
+                -{" "}
                 <time dateTime={`${day.dateTime}T${timeSlot.end}-08:00`}>
                   {timeSlot.end}
-                </time>{' '}
+                </time>{" "}
                 EST
               </>
             )}
@@ -230,7 +236,7 @@ function TimeSlots({ day, className }) {
         </li>
       ))}
     </ol>
-  )
+  );
 }
 
 function ScheduleStatic() {
@@ -243,7 +249,7 @@ function ScheduleStatic() {
         </section>
       ))}
     </div>
-  )
+  );
 }
 
 export function Schedule() {
@@ -252,7 +258,7 @@ export function Schedule() {
       <Container className="relative z-10">
         <div className="max-w-2xl mx-auto lg:mx-0 lg:max-w-4xl lg:pr-24">
           <h2 className="text-4xl font-medium tracking-tighter text-blue-600 font-display sm:text-5xl">
-            Our two days together will be packed with inspiring sermons, late
+            Our three days together will be packed with inspiring sermons, late
             night fellowship, and food.
           </h2>
           <p className="mt-4 text-2xl tracking-tight text-blue-900 font-display">
@@ -266,7 +272,7 @@ export function Schedule() {
           <Image
             className="absolute left-full top-0 -translate-x-1/2 sm:left-1/2 sm:translate-y-[-15%] sm:translate-x-[-20%] md:translate-x-0 lg:translate-x-[5%] lg:translate-y-[4%] xl:translate-y-[-8%] xl:translate-x-[27%]"
             src={backgroundImage}
-            alt=""
+            alt="background image"
             width={918}
             height={1495}
             unoptimized
@@ -280,5 +286,5 @@ export function Schedule() {
         </Container>
       </div>
     </section>
-  )
+  );
 }

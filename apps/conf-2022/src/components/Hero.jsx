@@ -1,8 +1,8 @@
-import Image from 'next/future/image'
+import Image from "next/image";
 
-import { Button } from '@/components/Button'
-import { Container } from '@/components/Container'
-import backgroundImage from '@/images/background.jpg'
+import { Button } from "@/components/Button";
+import { Container } from "@/components/Container";
+import backgroundImage from "@/images/background.jpg";
 
 export function Hero() {
   return (
@@ -46,10 +46,10 @@ export function Hero() {
           </Button>
           <dl className="grid grid-cols-2 mt-10 gap-y-6 gap-x-10 sm:mt-16 sm:gap-y-10 sm:gap-x-16 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
             {[
-              ['Speakers', '5'],
-              ['People Attending', '1,100'],
-              ['Church', 'FRBC'],
-              ['Location', 'Virginia'],
+              ["Speakers", "5"],
+              ["People Attending", "1,100"],
+              ["Church", "FRBC"],
+              ["Location", "Virginia"],
             ].map(([name, value]) => (
               <div key={name}>
                 <dt className="font-mono text-sm text-blue-600">{name}</dt>
@@ -62,5 +62,5 @@ export function Hero() {
         </div>
       </Container>
     </div>
-  )
+  );
 }

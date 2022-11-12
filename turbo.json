@@ -12,7 +12,11 @@
       "cache": false
     },
     "conf-2021#build": {
-      "dependsOn": ["$NEXT_PUBLIC_GRAPH_CMS", "$GRAPHCMS_PREVIEW_TOKEN"]
+      "dependsOn": [
+        "$NEXT_PUBLIC_GRAPH_CMS",
+        "$GRAPHCMS_PREVIEW_TOKEN",
+        "$NEXT_PUBLIC_SPLITBEE_TOKEN"
+      ]
     }
   }
 }
