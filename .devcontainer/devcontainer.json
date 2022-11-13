@@ -1,5 +1,6 @@
 {
   "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "postCreateCommand": ["pnpm install"],
   "features": {
     "ghcr.io/NicoVIII/devcontainer-features/pnpm:1": {}
   }
