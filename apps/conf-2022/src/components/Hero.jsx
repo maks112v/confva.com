@@ -47,7 +47,6 @@ export function Hero() {
           <dl className="grid grid-cols-2 mt-10 gap-y-6 gap-x-10 sm:mt-16 sm:gap-y-10 sm:gap-x-16 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
             {[
               ["Speakers", "5"],
-              ["People Attending", "1,100"],
               ["Church", "FRBC"],
               ["Location", "Virginia"],
             ].map(([name, value]) => (
