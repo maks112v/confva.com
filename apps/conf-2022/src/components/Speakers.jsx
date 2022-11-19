@@ -20,7 +20,7 @@ const days = [
     speakers: [
       {
         name: "Владимир Миняков",
-        description: "Kansas City, KA",
+        description: "Kansas City, MI",
         image: vladimirMinyakovImage,
       },
       {
@@ -42,7 +42,7 @@ const days = [
       },
       {
         name: "Владимир Миняков",
-        description: "Kansas City, KA",
+        description: "Kansas City, MI",
         image: vladimirMinyakovImage,
       },
       {
@@ -74,7 +74,7 @@ const days = [
       },
       {
         name: "Владимир Миняков",
-        description: "Kansas City, KA",
+        description: "Kansas City, MI",
         image: vladimirMinyakovImage,
       },
     ],
