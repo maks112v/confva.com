@@ -39,10 +39,10 @@ export function Hero() {
           </div>
           <Button
             target="_blank"
-            href="https://forms.gle/PrB2zmxuW72rSR8f7"
+            href="https://www.youtube.com/c/FirstRussianBaptistChurch/live"
             className="w-full mt-10 sm:hidden"
           >
-            Submit Question
+            Watch Live
           </Button>
           <dl className="grid grid-cols-2 mt-10 gap-y-6 gap-x-10 sm:mt-16 sm:gap-y-10 sm:gap-x-16 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
             {[
