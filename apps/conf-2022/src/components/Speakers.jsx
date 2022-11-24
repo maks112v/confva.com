@@ -7,6 +7,7 @@ import { Container } from "@/components/Container";
 import { DiamondIcon } from "@/components/DiamondIcon";
 
 import antonArtemyevImage from "@/images/avatars/anton-artemyev.jpg";
+import igorKrushkovImage from "@/images/avatars/igor-kruskov.png";
 import olegArtemyevImage from "@/images/avatars/oleg-artemyev.jpg";
 import peterTkachukJrImage from "@/images/avatars/peter-tkachuk-jr.jpg";
 import uriSychevImage from "@/images/avatars/uri-sychev.jpg";
@@ -28,6 +29,11 @@ const days = [
         description: "Harrisonburg, VA",
         image: olegArtemyevImage,
       },
+      {
+        name: "Игорь Кружков",
+        description: "Oregon",
+        image: igorKrushkovImage,
+      },
     ],
   },
   {
@@ -47,7 +53,7 @@ const days = [
       },
       {
         name: "Юрий Сычев",
-        description: "Harrisonburg, VA",
+        description: "Springfield, Massachusetts",
         image: uriSychevImage,
       },
       {
@@ -76,6 +82,11 @@ const days = [
         name: "Владимир Миняков",
         description: "Kansas City, MI",
         image: vladimirMinyakovImage,
+      },
+      {
+        name: "Олег Артемьев",
+        description: "Harrisonburg, VA",
+        image: olegArtemyevImage,
       },
     ],
   },
