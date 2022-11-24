@@ -58,8 +58,8 @@ const schedule = [
         end: "3:00PM",
       },
       {
-        name: "Seminar",
-        description: "Ткачук Петр jr",
+        name: "Q&A",
+        description: "Questions and Answers",
         start: "3:00PM",
         end: "4:00PM",
       },
@@ -70,9 +70,15 @@ const schedule = [
         end: "5:00PM",
       },
       {
-        name: "Q&A",
-        description: "Questions and Answers with Олег Артемьев",
+        name: "Seminar",
+        description: "Ткачук Петр jr",
         start: "5:00PM",
+        end: "6:00PM",
+      },
+      {
+        name: "Q&A",
+        description: "Questions and Answers",
+        start: "6:00PM",
         end: "7:00PM",
       },
       {
