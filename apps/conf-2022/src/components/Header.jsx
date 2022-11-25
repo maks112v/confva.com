@@ -24,11 +24,8 @@ export function Header() {
           </div>
         </div>
         <div className="hidden sm:mt-10 sm:flex lg:mt-0 lg:grow lg:basis-0 lg:justify-end">
-          <Button
-            target="_blank"
-            href="https://www.youtube.com/c/FirstRussianBaptistChurch/live"
-          >
-            Watch Live
+          <Button target="_blank" href="https://forms.gle/PrB2zmxuW72rSR8f7">
+            Submit Question
           </Button>
         </div>
       </Container>

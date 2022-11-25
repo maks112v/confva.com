@@ -37,12 +37,13 @@ export function Hero() {
               to walk judiciously and redeem the fleeting time we have left.
             </p>
           </div>
+
           <Button
             target="_blank"
-            href="https://www.youtube.com/c/FirstRussianBaptistChurch/live"
+            href="https://forms.gle/PrB2zmxuW72rSR8f7"
             className="w-full mt-10 sm:hidden"
           >
-            Watch Live
+            Submit Question
           </Button>
           <dl className="grid grid-cols-2 mt-10 gap-y-6 gap-x-10 sm:mt-16 sm:gap-y-10 sm:gap-x-16 sm:text-center lg:auto-cols-auto lg:grid-flow-col lg:grid-cols-none lg:justify-start lg:text-left">
             {[
