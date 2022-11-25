@@ -49,7 +49,7 @@ export default function Home() {
         <Hero />
         <LiveSlice
           title={"Live Stream"}
-          embed={"https://www.youtube.com/embed/c-VPqjp9wAg"}
+          embed={"https://www.youtube.com/embed/LebfMmj02v8"}
         />
 
         <Speakers />
