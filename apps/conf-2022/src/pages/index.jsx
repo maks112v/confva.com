@@ -3,6 +3,7 @@ import Head from "next/head";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
+import { LiveSlice } from "@/components/Live";
 import { Schedule } from "@/components/Schedule";
 import { Speakers } from "@/components/Speakers";
 
@@ -46,6 +47,11 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <LiveSlice
+          title={"Live Stream"}
+          embed={"https://www.youtube.com/embed/c-VPqjp9wAg"}
+        />
+
         <Speakers />
         <Schedule />
         {/* <Sponsors /> */}
