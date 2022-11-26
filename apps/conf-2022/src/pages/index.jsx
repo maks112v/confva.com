@@ -49,7 +49,9 @@ export default function Home() {
         <Hero />
         <LiveSlice
           title={"Live Stream"}
-          embed={"https://www.youtube.com/embed/LebfMmj02v8"}
+          embed={
+            "https://www.youtube.com/embed/live_stream?channel=UC70jpGER721BjOlDqafmSkA"
+          }
         />
 
         <Speakers />
