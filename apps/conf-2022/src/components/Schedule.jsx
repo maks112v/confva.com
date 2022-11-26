@@ -117,7 +117,7 @@ const schedule = [
       {
         name: "Coffee Night",
         description: "Join us for coffee and fellowship.",
-        start: "5:00PM",
+        start: "6:00PM",
       },
     ],
   },
